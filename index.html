@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var bir = '140222199211107512';
+        var newStr = '';
+
+        function birthday(str) {
+            var left = str.substring(0, 6);
+            var newBir = str.substring(6, 14);
+            var last = str.substring(14);
+            var rrr = '****';
+            newStr += left + newBir + rrr;
+            return newStr;
+        }
+        console.log(birthday(bir));
+    </script>
+</body>
+
+</html>
